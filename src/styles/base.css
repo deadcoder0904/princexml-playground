@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Nova+Flat');
+
+.frontcover {
+  @apply relative text-white text-center;
+
+  & > h1 {
+    @apply text-5xl font-bold font-nova absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+
+  & > span {
+    @apply text-3xl font-semibold font-nova absolute bottom-10 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+}
