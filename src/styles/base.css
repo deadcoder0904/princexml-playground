@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Nova+Flat');
 
 .frontcover {
-  @apply relative text-white text-center;
+  @apply mx-auto text-center;
+
+  /* colors don't work using @apply for some reason... even background below */
+  color: theme('colors.white');
 
   & > h1 {
-    @apply text-5xl font-bold font-nova absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+    @apply w-full text-7xl text-white p-4 font-bold font-nova rounded-3xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+    background: theme('colors.slate.700');
   }
 
   & > span {
-    @apply text-3xl font-semibold font-nova absolute bottom-10 left-1/2 -translate-x-1/2 -translate-y-1/2;
+    @apply w-full text-4xl text-white p-4 font-semibold font-sans rounded-3xl absolute bottom-0 left-1/2 -translate-x-1/2;
+    background: theme('colors.indigo.700');
+    &:before {
+      content: 'by ';
+    }
   }
 }

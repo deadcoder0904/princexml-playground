@@ -2,16 +2,22 @@
 
 @media screen {
   body {
-    background: theme('colors.slate.100');
-    @apply max-w-3xl mx-auto;
+    background: theme('colors.slate.900');
   }
 
   .container {
-    @apply bg-white overflow-hidden;
+    @apply mx-auto;
   }
 
   .frontcover {
-    /* background: url('./cover.png'); */
-    @apply bg-[url('./cover.png')] bg-cover bg-no-repeat bg-center;
+    @apply max-w-xl relative bg-[url('./cover.png')] bg-cover bg-no-repeat bg-center h-screen;
+
+    & > h1 {
+      @apply text-5xl;
+    }
+
+    & > span {
+      @apply text-2xl bottom-20 absolute;
+    }
   }
 }
