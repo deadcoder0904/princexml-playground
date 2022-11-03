@@ -15,4 +15,44 @@
     page: cover;
     page-break-after: always;
   }
+
+  .pagebreak::before {
+    content: ' ';
+    display: block;
+    page-break-after: always;
+  }
+
+  #toc > h1,
+  h1.chapter {
+    font-size: 32pt;
+    font-weight: 900;
+  }
+
+  h2.subtitle {
+    font-size: 28pt;
+    font-weight: 900;
+  }
+
+  h1,
+  h2 {
+    break-before: page;
+  }
+
+  /* table of contents start */
+  #toc {
+    break-before: page;
+  }
+
+  #toc ol {
+    list-style-type: none;
+  }
+
+  #toc a:after {
+    content: leader('. ') target-counter(attr(href), page);
+  }
+
+  #toc a {
+    text-decoration: none;
+  }
+  /* table of contents end */
 }
