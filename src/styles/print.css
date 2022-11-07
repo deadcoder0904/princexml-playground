@@ -38,11 +38,17 @@
     break-before: page;
   }
 
-  img {
-    background: red;
-    width: 125%;
-    margin-left: -5%;
-    margin-right: -5%;
+  figure {
+    @apply flex flex-col justify-center items-center py-6;
+
+    & > img {
+      @apply m-4 w-[125%];
+    }
+
+    & > figcaption {
+      color: theme('colors.gray.700');
+      @apply text-xs italic pt-4;
+    }
   }
 
   /* table of contents start */
