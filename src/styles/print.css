@@ -38,6 +38,13 @@
     break-before: page;
   }
 
+  img {
+    background: red;
+    width: 125%;
+    margin-left: -5%;
+    margin-right: -5%;
+  }
+
   /* table of contents start */
   #toc {
     break-before: page;

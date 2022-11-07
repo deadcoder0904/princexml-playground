@@ -1,0 +1,4 @@
+{
+  "watch": ["src/index.html", "src/styles/*.css"],
+  "ext": "js, css, html"
+}

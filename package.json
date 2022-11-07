@@ -6,6 +6,7 @@
   "scripts": {
     "start": "parcel src/index.html",
     "tailwind": "tailwindcss --postcss -i ./src/styles/index.css -o ./src/index.css --watch",
+    "nodemon": "nodemon --config nodemon.json --exec \"npm run generate:pdf\"",
     "generate:pdf": "prince src/index.html -s src/index.css -o src/index.pdf"
   },
   "keywords": [],
@@ -13,6 +14,7 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "nodemon": "^2.0.20",
     "parcel": "^2.7.0",
     "postcss": "^8.4.18",
     "postcss-import": "^15.0.0",
